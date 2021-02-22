@@ -12,7 +12,12 @@ public class Pedido_commit {
 	private String estado;
 	
 	public Pedido_commit(Cliente_commit cliente,Date fechaHora, double importeTotal, PasarelaDePago_commit pago) {
-		
+		this.setCliente(cliente);
+		this.setFechaHora(fechaHora);
+		this.setProducto(new ArrayList<Producto_commit>());
+		this.setImporteTotal(importeTotal);
+		this.setPago(pago);
+		this.setEstado(estado);
 	}
 	
 	public void setCliente(Cliente_commit cliente) {
@@ -62,5 +67,20 @@ public class Pedido_commit {
 	
 	public String getEstado() {
 		return estado;
+	}
+	
+	
+	public void pagar(PasarelaDePago_commit TipoPago) {
+		
+	}
+	
+	public void agregarProducto(Producto_commit producto) {
+		productos.add(producto);
+	}
+	
+	public void eliminarProducto(int posicion) {
+		if (posicion<=productos.size() && posicion>=0) {
+			productos.remove(posicion);
+		}
 	}
 }

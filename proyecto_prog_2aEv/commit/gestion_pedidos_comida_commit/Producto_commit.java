@@ -5,7 +5,8 @@ public class Producto_commit {
 	private double precio;
 	
 	public Producto_commit(String nombre, double precio) {
-		
+		this.setNombre(nombre);
+		this.setPrecio(precio);
 	}
 	
 	public void setNombre(String nombre) {

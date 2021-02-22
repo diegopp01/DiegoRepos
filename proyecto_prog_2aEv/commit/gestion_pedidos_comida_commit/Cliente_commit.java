@@ -12,7 +12,12 @@ public class Cliente_commit {
 	private ArrayList<Pedido_commit> historial;
 	
 	public Cliente_commit(String nombre, String apellidos, Date fechaDeAlta, String telefono, String direccion) {
-		
+		this.setNombre(nombre);
+		this.setApellidos(apellidos);
+		this.setFechaDeAlta(fechaDeAlta);
+		this.setTelefono(telefono);
+		this.setDireccion(direccion);
+		this.setHistorial(new ArrayList<Pedido_commit>());
 	}
 	
 	public void setNombre(String nombre) {
@@ -82,4 +87,10 @@ public class Cliente_commit {
 		return historial;
 	}
 
+	
+	public void agregarPedido(Pedido_commit pedido) {
+		if (historial!=null) {
+			historial.add(pedido);
+		}
+	}
 }
