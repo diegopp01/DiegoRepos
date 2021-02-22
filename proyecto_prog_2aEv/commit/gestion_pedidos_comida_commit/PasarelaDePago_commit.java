@@ -97,4 +97,10 @@ public class PasarelaDePago_commit {
 	public String toString() {
 		return "Importe: "+getImporte()+"€, Código de pago: "+getCodigoPago();
 	}
+	
+	public static void main(String[] args) {
+		PasarelaDePago_commit pDP1=new PasarelaDePago_commit(12.30);
+		pDP1.efectivo(cantidadEntrega);
+		System.out.println(pDP1);
+	}
 }

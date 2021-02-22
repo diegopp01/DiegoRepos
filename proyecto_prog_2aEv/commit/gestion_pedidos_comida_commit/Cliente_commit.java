@@ -108,4 +108,10 @@ public class Cliente_commit {
 		return "CLIENTE -> Nombre completo: "+getNombre()+" "+getApellidos()+", Fecha: "+getFechaDeAlta()+
 				", Teléfono: "+getTelefono()+", Calle: "+getDireccion()+", Pedido: "+getHistorial();
 	}
+	
+	public static void main(String[] args) {
+		Cliente_commit cliente1=new Cliente_commit("Pepe","Martínez Pérez","857 881 205","C/ Vegabaja, nº 17");
+		
+		System.out.println(cliente1);
+	}
 }

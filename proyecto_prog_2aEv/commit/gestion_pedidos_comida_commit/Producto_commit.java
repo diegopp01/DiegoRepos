@@ -35,4 +35,9 @@ public class Producto_commit {
 	public String toString() {
 		return "PRODUCTO -> Nombre: "+getNombre()+", Precio: "+getPrecio()+"€";
 	}
+	
+	public static void main(String[] args) {
+		Producto_commit producto1=new Producto_commit("Hamburguesa", 3.50);
+		System.out.println(producto1);
+	}
 }
