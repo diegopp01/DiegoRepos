@@ -20,6 +20,15 @@ public class Pedido_commit {
 		this.setEstado(estado);
 	}
 	
+	public Pedido_commit(Cliente_commit cliente, double importeTotal) {
+		this.setCliente(cliente);
+		this.setFechaHora(fechaHora);
+		this.setProducto(productos);
+		this.setImporteTotal(importeTotal);
+		this.setPago(pago);
+		this.setEstado(estado);
+	}
+	
 	public void setCliente(Cliente_commit cliente) {
 		this.cliente=cliente;
 	}

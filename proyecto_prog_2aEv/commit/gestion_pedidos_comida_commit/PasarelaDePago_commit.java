@@ -14,6 +14,11 @@ public class PasarelaDePago_commit {
 		this.cantidadEntrega=cantidadEntrega;
 	}
 	
+	public PasarelaDePago_commit(double importe) {
+		this.setImporte(importe);
+		this.setCodigoPago();
+	}
+	
 	public void setImporte(double importe) {
 		importe = Math.round(importe*100)/100d;
 		this.importe=importe;

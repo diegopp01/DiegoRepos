@@ -20,6 +20,15 @@ public class Cliente_commit {
 		this.setHistorial(new ArrayList<Pedido_commit>());
 	}
 	
+	public Cliente_commit(String nombre, String apellidos, String telefono, String direccion) {
+		this.setNombre(nombre);
+		this.setApellidos(apellidos);
+		this.setFechaDeAlta(fechaDeAlta);
+		this.setTelefono(telefono);
+		this.setDireccion(direccion);
+		this.setHistorial(historial);
+	}
+	
 	public void setNombre(String nombre) {
 		this.nombre=nombre.toLowerCase();
 	}
