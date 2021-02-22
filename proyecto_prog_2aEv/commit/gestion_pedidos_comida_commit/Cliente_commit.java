@@ -10,5 +10,8 @@ public class Cliente_commit {
 	private String telefono;
 	private String direccion;
 	private ArrayList<Pedido_commit> historial;
-
+	
+	public Cliente_commit(String nombre, String apellidos, Date fechaDeAlta, String telefono, String direccion) {
+		
+	}
 }
