@@ -14,4 +14,46 @@ public class Cliente_commit {
 	public Cliente_commit(String nombre, String apellidos, Date fechaDeAlta, String telefono, String direccion) {
 		
 	}
+	
+	public void setNombre(String nombre) {
+		this.nombre=nombre.toLowerCase();
+	}
+	
+	public void setApellidos(String apellidos) {
+		this.apellidos=apellidos.toUpperCase();
+	}
+	
+	public void setFechaDeAlta(Date fechaDeAlta) {
+		if (this.fechaDeAlta==null) {
+			this.fechaDeAlta=new Date();
+		}else {
+			this.fechaDeAlta=fechaDeAlta;
+		}
+	}
+	
+	public void setTelefono(String telefono) {
+		telefono = telefono.replace(" ", "");
+		if (telefono.length() != 9) {
+			System.out.println("ERROR: El número de teléfono debe tener 9 números.");
+			this.telefono = "000000000";
+		} else {
+			if (telefono.charAt(0) != '6' &&
+				telefono.charAt(0) != '7' &&
+				telefono.charAt(0) != '8' &&
+				telefono.charAt(0) != '9') {
+				System.out.println("ERROR: El número de teléfono debe empezar por 8, 9 (teléfono) o 6, 7 (móvil)");
+				this.telefono = "000000000";
+			} else {
+				this.telefono = telefono;
+			}
+		}
+	}
+	
+	public void setDireccion(String direccion) {
+		this.direccion=direccion;
+	}
+	
+	public void setHistorial(ArrayList<Pedido_commit> historial) {
+		this.historial=historial;
+	}
 }
