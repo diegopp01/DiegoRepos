@@ -30,4 +30,9 @@ public class Producto_commit {
 	public double getPrecio() {
 		return precio;
 	}
+	
+	@Override
+	public String toString() {
+		return "PRODUCTO -> Nombre: "+getNombre()+", Precio: "+getPrecio()+"€";
+	}
 }

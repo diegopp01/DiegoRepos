@@ -92,4 +92,11 @@ public class Pedido_commit {
 			productos.remove(posicion);
 		}
 	}
+	@Override
+	public String toString() {
+		return "CANT.               PRODUCTO               PRECIO UD.         TOTAL"
+				+"\n=====               ========               =========          ====="
+				+"\n               "+getProducto()+
+				"\nTOTAL ---------------------------------------------------> "+getImporteTotal();
+	}
 }

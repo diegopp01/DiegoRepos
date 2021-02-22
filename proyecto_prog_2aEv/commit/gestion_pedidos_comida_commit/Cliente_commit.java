@@ -102,4 +102,10 @@ public class Cliente_commit {
 			historial.add(pedido);
 		}
 	}
+	
+	@Override
+	public String toString() {
+		return "CLIENTE -> Nombre completo: "+getNombre()+" "+getApellidos()+", Fecha: "+getFechaDeAlta()+
+				", Teléfono: "+getTelefono()+", Calle: "+getDireccion()+", Pedido: "+getHistorial();
+	}
 }

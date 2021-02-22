@@ -92,4 +92,9 @@ public class PasarelaDePago_commit {
 		cambio = cambio / 100d;
 		System.out.println("Total devolución: " + cambio + " €\nGRACIAS POR SU VISITA");
 	}
+	
+	@Override
+	public String toString() {
+		return "Importe: "+getImporte()+"€, Código de pago: "+getCodigoPago();
+	}
 }
