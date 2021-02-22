@@ -20,4 +20,13 @@ public class Producto_commit {
 			this.precio=precio;
 		}
 	}
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public double getPrecio() {
+		return precio;
+	}
 }

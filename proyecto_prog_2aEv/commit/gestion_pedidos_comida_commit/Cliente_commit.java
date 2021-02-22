@@ -56,4 +56,30 @@ public class Cliente_commit {
 	public void setHistorial(ArrayList<Pedido_commit> historial) {
 		this.historial=historial;
 	}
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+	
+	public String getApellidos() {
+		return apellidos;
+	}
+	
+	public Date getFechaDeAlta() {
+		return fechaDeAlta;
+	}
+	
+	public String getTelefono() {
+		return telefono;
+	}
+	
+	public String getDireccion() {
+		return direccion;
+	}
+	
+	public ArrayList<Pedido_commit> getHistorial() {
+		return historial;
+	}
+
 }

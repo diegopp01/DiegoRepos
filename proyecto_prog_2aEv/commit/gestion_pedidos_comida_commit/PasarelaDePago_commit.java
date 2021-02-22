@@ -19,4 +19,13 @@ public class PasarelaDePago_commit {
 	public void setCodigoPago() {
 		this.codigoPago=new Date().getTime();
 	}
+	
+	
+	public double getImporte() {
+		return importe;
+	}
+	
+	public long getCodigoPago() {
+		return codigoPago;
+	}
 }

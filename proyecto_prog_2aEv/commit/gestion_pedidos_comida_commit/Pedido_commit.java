@@ -38,4 +38,29 @@ public class Pedido_commit {
 	public void setEstado(String estado) {
 		this.estado=estado;
 	}
+	
+	
+	public Cliente_commit getCliente() {
+		return cliente;
+	}
+	
+	public Date getFechaHora() {
+		return fechaHora;
+	}
+	
+	public ArrayList<Producto_commit> getProducto() {
+		return productos;
+	}
+	
+	public double getImporteTotal() {
+		return importeTotal;
+	}
+	
+	public PasarelaDePago_commit getPago() {
+		return pago;
+	}
+	
+	public String getEstado() {
+		return estado;
+	}
 }
