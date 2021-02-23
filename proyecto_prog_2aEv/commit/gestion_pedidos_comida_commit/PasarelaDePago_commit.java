@@ -4,40 +4,69 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class PasarelaDePago_commit {
+	/**
+	 * Atributos
+	 */
 	private double importe;
 	private long codigoPago;
 	private static double cantidadEntrega;
 	
+	/**
+	 * Constructor
+	 * @param importe
+	 * @param codigoPago
+	 * @param cantidadEntrega
+	 */
 	public PasarelaDePago_commit(double importe, long codigoPago,double cantidadEntrega) {
 		this.setImporte(importe);
 		this.setCodigoPago();
 		this.cantidadEntrega=cantidadEntrega;
 	}
-	
+	/**
+	 * Sobrecarga constructor
+	 * @param importe
+	 */
 	public PasarelaDePago_commit(double importe) {
 		this.setImporte(importe);
 		this.setCodigoPago();
 	}
 	
+	/**
+	 * Recoge el importe a pagar
+	 * @param importe
+	 */
 	public void setImporte(double importe) {
 		importe = Math.round(importe*100)/100d;
 		this.importe=importe;
 	}
 	
+	/**
+	 * Recoge el codigo de pago
+	 */
 	public void setCodigoPago() {
 		this.codigoPago=new Date().getTime();
 	}
 	
-	
+	/**
+	 * Devuelve el importe a pagar
+	 * @return
+	 */
 	public double getImporte() {
 		return importe;
 	}
 	
+	/**
+	 * Devuelve el codigo de pago
+	 * @return
+	 */
 	public long getCodigoPago() {
 		return codigoPago;
 	}
 	
-	
+	/**
+	 * Sirve para realizar un tipo de pago
+	 * @param cantidadEntrega
+	 */
 	public void efectivo(double cantidadEntrega) {
 		Scanner teclado = new Scanner(System.in);
 		double entregar = 0.0;
@@ -93,6 +122,9 @@ public class PasarelaDePago_commit {
 		System.out.println("Total devolución: " + cambio + " €\nGRACIAS POR SU VISITA");
 	}
 	
+	/**
+	 * Muestra los datos del pago
+	 */
 	@Override
 	public String toString() {
 		return "Importe: "+getImporte()+"€, Código de pago: "+getCodigoPago();
