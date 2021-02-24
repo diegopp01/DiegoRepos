@@ -1,0 +1,35 @@
+body{
+	background-image: url("imagenes/background01.jpeg");
+	font-family: Arial Rounded MT;
+	font-size: 100%;
+	font-style: italic;
+	background-repeat: repeat-x;
+}
+
+img{
+	display: block;
+	margin: auto;
+}
+
+h1{
+	color: #f57f17;
+	font-size: 35;
+	font-family: Arial Rounded MT;
+	text-align: center;
+}
+
+#de{
+	font-size: 75%;
+}
+
+#ciberataques{
+	font-size: 220%;
+	display: block;
+}
+
+h2{
+	color: #32A981;
+	font-size: 30;
+	font-family: Arial;
+	text-align: center;
+}

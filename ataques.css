@@ -1,0 +1,90 @@
+#guia{
+	color: #f57f17;
+}
+
+#usuario{
+	float: right;
+}
+
+img{
+	display: block;
+	margin: auto;
+}
+
+body{
+	background-image: url("imagenes/background01.jpeg");
+	background-repeat: repeat-x;
+	font-family: Arial;
+	font-size: 150%;
+	font-style: italic;
+}
+
+#tipos{
+	font-family: Arial;
+	font-style: normal;
+}
+
+h1{
+	text-align: center
+}
+
+#cuadrado1{
+	text-align: center;
+	display: block;
+	margin: auto;
+	font-size: 300%;
+	height: 90px;
+	width: 100px;
+	background-color: #f57f17;
+	color: white;
+}
+
+#recuadro{
+	display: block;
+	margin: auto;
+	height: 1050px;
+	width: 850px;
+    background-color: #FFE8C8;
+    border: 2px solid #f57f17;
+}
+
+#color{
+	color: #D53032;
+}
+
+#texto{
+	margin-left: 2em;
+}
+
+ul{
+	margin-left: 2em;
+}
+
+footer{
+	background-color: #C1C0BF;
+	position: all;
+	height: 6.5em;
+	text-align: center;
+	margin-top: 15em;
+}
+
+#incibe{
+	width: 340px;
+	height: 150px;
+	float: left;
+}
+
+#O17{
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+#osi{
+	width: 340px;
+	height: 150px;
+	float: right;
+}
+#num_pie{
+	font-style: normal;
+}

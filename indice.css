@@ -1,0 +1,105 @@
+#guia{
+	color: #f57f17;
+}
+
+#usuario{
+	float: right;
+}
+
+body{
+	background-image: url("imagenes/background01.jpeg");
+	background-repeat: repeat-x;
+	font-family: Arial;
+	font-size: 150%;
+	font-style: italic;
+	font-style: bold;
+}
+
+img{
+	display: block;
+	margin: auto;
+}
+
+h1{
+	font-size: 270%;
+}
+
+h2{
+	font-size: 130%;
+	color: #f57f17;
+}
+
+h3{
+	color: #f57f17;
+}
+
+ol{
+	counter-reset: num;
+}
+
+#cuadrado{
+	display: block;
+	margin-bottom: 2em;
+}
+
+#cuadrado:before{
+	content: counters(num, ".") " ";
+	counter-increment: num;
+	padding: 8px 11px;
+	background-color: #f57f17;
+	color: white;
+}
+
+#orden{
+	display: block;
+}
+
+#orden:before{
+	content: counters(num, ".") " ";
+	counter-increment: num;
+}
+
+#dividir{
+	column-count: 2;
+	column-rule: 4px solid grey;
+}
+
+footer{
+	background-color: #C1C0BF;
+	position: all;
+	height: 6.5em;
+	text-align: center;
+}
+
+#pag{
+	font-size: 15;
+	float: right;
+	margin-right: 7em;
+}
+
+#cc{
+	width: 320px;
+	height: 150px;
+	float: right;
+}
+
+#incibe{
+	width: 340px;
+	height: 150px;
+	float: left;
+}
+
+#O17{
+	width: 150px;
+	height: 150px;
+	float: left;
+}
+
+#osi{
+	width: 340px;
+	height: 150px;
+	float: right;
+}
+#num_pie{
+	font-style: normal;
+}
